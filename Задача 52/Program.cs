@@ -33,18 +33,16 @@ int[,] GetArray(int m, int n, int min, int max)
     return result;
 }
 void SrArifm(int[,] array)
-{
+{ WriteLine("Среднее арифметическое каждого столбца: ");
      for (int j = 0; j < array.GetLength(1); j++)
     {
         double sum = 0;
         for (int i = 0; i < array.GetLength(0); i++)
-    
         {
         sum += array[i, j];
         }
-    Write($"Среднее арифметическое каждого столбца: {sum/(array.GetLength(0))} ");
+    Write($"{sum/(array.GetLength(0))} ");
     }
-    
 }
 
 void PrintArray(int[,] array)
